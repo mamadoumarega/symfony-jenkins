@@ -22,7 +22,7 @@ pipeline {
 
         stage('Build & Deploy') {
             steps {
-                // Build and deploy steps
+                echo 'Le pipeline fonctionne correctement !'
             }
         }
     }
