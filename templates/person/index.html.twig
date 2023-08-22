@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Person registration{% endblock %}
+
+{% block body %}
+    {{ form_start(personForm) }}
+       <div class="container">
+          <h1 class="text-center mt-5">Enregistrer une personne</h1>
+          <div class="col-12 col-sm-12 col-md-6 mx-auto my-auto">
+             <div class="mt-5">
+                 {{ form_row(personForm.firstname) }}
+                 {{ form_row(personForm.surname) }}
+                 {{ form_row(personForm.submit) }}
+             </div>
+          </div>
+       </div>
+    {{ form_end(personForm) }}
+{% endblock %}
